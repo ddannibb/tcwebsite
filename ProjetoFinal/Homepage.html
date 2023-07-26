@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="yes">
+  <link rel="icon" type="image/gif" href="./Icon/icons8-spock-office-16.png">
+  <title>Tiago Cortinhal, Ph.D</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d15ced3cfb.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+  
+
+
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="topnav">
+      <a href="#Homepage"><img src="./Icon/icons8-spock-office-32.png" alt="spock"></a>
+      <a href="#aboutme">About Me</a>
+      <a href="#current">Current Work</a>
+      <a href="#published">Published Papers</a>
+      <a href="#contacts">Contacts </a>
+    </div>
+  </div>
+
+
+
+
+  <div class="slide1" id="Homepage">
+
+    <h1>Tiago Cortinhal, Ph.D</h1>
+
+    <h2> <i>“Despair is typical of those who do not understand the causes of evil,<br> see no way out, and are incapable
+        of struggle.”</i> <br>- Lenin</h2>
+  </div>
+
+
+
+  <div id="aboutme">
+    <br><br><br><br>
+    <h3 style="color: #e9cebf;">About me</h3> <br>
+
+    <div class="flexbox">
+
+
+      <div class="txt">
+        <h6>
+          <p> Welcome to my official website!</p>
+
+          <p>I'm Tiago, a passionate Portuguese Ph.D candidate specializing in Computer Vision in Sweden. </p>
+
+          <p> At 33 years old, I'm not only dedicated to my research,but I also have a deep love for philosophy, art,
+            politics, and economy. <br>
+            Exploring these diverse areas helps me cultivate a well-rounded perspective on the world. </p>
+
+          <p> When I'm not engrossed in academic pursuits, you'll often find me bouldering or engaging in various sports
+            activities. <br>
+            I believe in the importance of physical challenges to complement and enhance my intellectual endeavors.</p>
+
+          <p>My research primarily focuses on computer vision, with a particular interest in generative models and
+            autonomous vehicles. <br>
+            I'm fascinated by the potential of artificial vision and strive to push the boundaries of what machines can
+            perceive and comprehend.</p>
+
+          <p>In my personal life, I share a special bond with my cat, Nikita. <br> Additionally, my passion for
+            political activism drives me to actively seek out projects that contribute to social good. <br>
+            I'm always open to collaborating on initiatives that aim to make a positive impact on society. </p>
+
+          <p>Through this website, I aim to share my research, insights, and experiences with you. <br>
+            Join me on this exciting journey as we explore the intersection of technology, philosophy, art, politics,
+            economy, and the pursuit of a better future. </p>
+
+          <p> Together, let's make a difference in the world! Keep scrolling to know more about my work.</p>
+        </h6>
+
+      </div>
+
+      <div class="imgcv">
+
+        <div class="polaroid">
+          <a href="#" title="me!">
+            <img src="./Images/TiagoC.jpg" alt="TiagoCortinhal" title="TC" width="auto" height="350px">
+          </a>
+        </div>
+         
+        <center><a href="https://github.com/TiagoCortinhal" class="github" role="button" target="_blank">Click for Github</a></center>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg1"></div>
+
+  <div class="slides">
+    <div id="current">
+      <br><br><br><br>
+      <h3 style="color: #daacaa;">Current Work</h3>
+
+
+      <div class="bigcard"> <br>
+
+        
+          <div id="RP">Roadview Project</div> <br>
+
+              <img src="./currentwork.png" class="RoadviewProject" alt="Roadview Project">
+
+            <div class="textbox">
+
+              <p> In our approach, we utilize a domain translation network specifically designed to translate LiDAR data to <i>RGB-D</i> (Red, Green, Blue, and Depth) images. 
+              This network is capable of converting LiDAR point cloud data into corresponding <i>RGB-D</i> representations.</p>
+
+              <p>Once we obtain the <i>RGB-D</i> images, we leverage them to generate a new set of point clouds.</p>
+
+              <p>This process involves extracting depth information from the RGB-D images and converting it back into a point cloud format. 
+              By generating these augmented point clouds, we aim to enhance the quality and diversity of the original real-world point cloud dataset.</p>
+
+              <p>The primary motivation behind this augmentation is to improve object detection scores. 
+              By incorporating the augmented point clouds, which contain additional information derived from the <i>RGB-D</i> images, we expect to enhance the performance of object detection algorithms. 
+              The <i>RGB-D</i> data provides richer contextual and spatial details, which can aid in accurately detecting and classifying objects within the scene.</p>
+
+              <p>The augmentation process helps to overcome the limitations of relying solely on real-world point cloud data. 
+              It allows us to expand the training set with synthetic point clouds generated from the <i>RGB-D</i> images. </p>
+
+              <p>This synthetic data introduces variations, such as different lighting conditions, viewpoints, and occlusions, that may not be present in the original real-world data. 
+              Consequently, the object detection algorithms trained on this augmented dataset can better generalize to various environmental conditions, leading to improved object detection scores.</p>
+
+              <p>In summary, we employ a domain translation network to convert LiDAR data to <i>RGB-D</i> images, and then leverage the <i>RGB-D</i> images to generate augmented point clouds.
+              By incorporating these augmented point clouds into the training process, we aim to enhance object detection scores by providing additional contextual and spatial information.</p>
+
+              <p>This approach allows us to overcome the limitations of relying solely on real-world point cloud data and improves the performance of object detection algorithms in various scenarios.</p>
+            
+              <p> If this has left you curious, you're welcome to check out <a href="https://roadview-project.eu/" target="_blank">the project's website.</a></p>
+            
+            </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bg2"></div>
+
+  <div class="slides">
+
+    <div id="published">
+      <br><br><br><br>
+      <h3 style="color:#545c90;">Published Papers</h3>
+
+      <div class="row">
+
+        <div class="columnX">
+          <div class="card">
+            <h4> Depth-and Semantics-aware Multi-modal Domain Translation: Generating 3D Panoramic Color Images from
+              LiDAR Point Clouds.</h4>
+              <br>
+              <div class="readmore"> <a href="https://arxiv.org/pdf/2302.07661.pdf" target="_blank">Read More</a></div>
+          </div>
+        </div>
+
+
+        <div class="columnX">
+          <div class="card">
+            <h4> Semantics-aware Multi-modal Domain Translation: From LiDAR Point Clouds to Panoramic Color Images</h4>
+              <br>
+              <div class="readmore"> <a href="https://openaccess.thecvf.com/content/ICCV2021W/AVVision/html/Cortinhal_Semantics-Aware_Multi-Modal_Domain_Translation_From_LiDAR_Point_Clouds_to_Panoramic_ICCVW_2021_paper.html"
+                target="_blank">Read More</a> </div>
+          </div>
+        </div>
+
+
+        <div class="columnX">
+          <div class="card">
+            <h4> SalsaNext: fast, uncertainty-aware semantic segmentation of LiDAR point clouds for autonomous driving.</h4>
+              <br>
+              <div class="readmore"><a href="https://d1wqtxts1xzle7.cloudfront.net/80567735/2003.03653v1-libre.pdf?1644511348=&response-content-disposition=inline%3B+filename%3DSalsaNext_Fast_Semantic_Segmentation_of.pdf&Expires=1688760464&Signature=R~H7W~MMewcLaAdJYYjJFseHy8Z~lKygbYTmHEXYYDiuLIA6FNIJWCihG8n-YBki6nWsZ3xt1mHgibFcW63QOXEAF229EoQH9sv1EhIS8t4fWpEZer0eTuK2aOfhFeLoj4f95b-mE6XqWqeH2TSl~3FZAIHzD5izCow2kVKDOEBn3yRVBD0mU0TKXXQY4uon1Hg4nW3lUfXEqlu1o-EIU0tDZMSkFFZDNuHjUOVKxm3Ob-ldijInQCJX8dzqan6nAeKTPgGduvUJ-ABQHu5I9evgYaZzFBRk~AxUBSAKUSNKFJvfq8iCjFQQ-yDy6tvp-O0lcvFNrqCycO3zDI6NEQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+                target="_blank">Read More</a></div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    
+
+  </div>
+
+  <div class="bg3"></div>
+
+  <div class="slides">
+
+    <div id="contacts">
+      <br><br><br><br>
+      <h3 style="color: #001e41;">Contacts</h3><br>
+
+        <div class="bigcard2"> 
+          
+          <div class="left-column">
+
+            <div class="box">
+
+              <h2>Email</h2>
+
+              <h5><a href="mailto:tiago.cortinhal@hh.se">tiago.cortinhal[at]hh.se</a></h5>
+            </div>
+
+            <div class="box">
+              <h2>Phone</h2>
+
+              <h5>+46 729 773 776</h5>
+            </div>
+
+            <div class="box">
+
+              <h2>Address</h2>
+
+              <h5>Halmstad University <br>
+                Box 823 <br>
+                SE-301 18 HALMSTAD</h5>
+
+            </div>
+          </div>
+      
+          <div class="right-column">
+
+            <div class="box">
+
+              <h2>Contact Form</h2>
+
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit"> Get in touch :) </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+
+  <a href="#" class="w3-button w3" style="float: right; color: #001e41;"><i class="fa fa-arrow-up"></i></a>
+
+</body>
+
+</html>

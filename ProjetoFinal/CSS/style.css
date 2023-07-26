@@ -1,0 +1,467 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100%;
+  background-image: linear-gradient(to bottom, #001e41, #092a51, #143661, #1e4372, #275083, #545c90, #78689a, #9876a3, #c28da3, #daacaa, #e9cebf, #f6efe1);
+  background-size: cover;
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+}
+
+.bg1 {
+  background: url("../Images/1.jpeg");  
+  height: 200px;
+  max-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2 {
+  background: url("../Images/2.png");  
+  height: 200px;
+  max-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg3 {
+  background: url("../Images/3.png");  
+  height: 200px;
+  max-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*navbar*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+  background: rgba(255, 255, 255, 0.30);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  padding: 5px;
+
+}
+
+.topnav a {
+  color: #001e41;
+  float: center;
+  font-size: 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color: #daacaa;
+  background-color: #275083;
+  border-radius: 20px;
+}
+
+/*bg slides*/
+
+.slide1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides {
+ margin: 0 20px;
+ height: auto;
+ min-height: 100vh;
+}
+
+
+/*abtme*/
+
+.flexbox {
+  display: flex;
+}
+
+.txt {
+  flex: 1;
+}
+
+.imgcv {
+  flex: 0;
+}
+
+#aboutme {
+  margin-left: 20px;
+}
+
+.polaroid a {
+  background: #f6efe1;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+  float: right;
+}
+  
+.polaroid a:after {
+  color: #001e41;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+  
+.polaroid img {
+  display: block;
+  width: auto;
+}
+
+/* botao github */
+.github {
+  background-color: #f6efe1;
+  border: 0 solid #E5E7EB;
+  color: #275083;
+  display: flex;
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #001e41 solid;
+  width: 75%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 50px;
+}
+
+.github:focus {
+  outline: 0;
+}
+
+.github:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #143661;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.github:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .github {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+/*current works*/
+
+.bigcard {
+  text-align: center;
+  background-color: #f6efe1;
+  border-radius: 10px;
+  border: 10px double #f6efe1;
+  background-clip: padding-box;
+  margin: 50px 0 50px;
+}
+
+.RoadviewProject {
+  max-width: 100%;
+  padding: 20px 30px;
+  border-radius: 10%;
+}
+
+.textbox {
+  text-align: justify;
+  padding: 10px 30px;
+  color: #001e41;
+}
+
+.bigcard a {
+  text-decoration: underline;
+  color: #275083;
+}
+
+/*published papers*/
+
+
+/* Float four columns side by side */
+.columnX {
+  float: left;
+  width: 33.3%;
+  padding: 0 15px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  margin: 0 -5px;}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 20px 50px 20px;
+  text-align: center;
+  background-color: #f6efe1;
+  border-radius: 10px;
+  border: 10px double #f6efe1;
+  background-clip: padding-box;
+  height: 50vh;
+  margin: 50px 0;
+  display: flex;
+}
+
+
+.readmore {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #001e41;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.readmore a {
+  text-decoration: none;
+  color: #f6efe1;
+}
+
+.readmore:hover {
+  background-color: #275083;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 700px) {
+  .row{
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1204px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 22vw;
+    margin-right: 15px;
+    padding: 20px;
+  }
+
+  .readmore {
+    margin-top: 20px;
+  }
+}
+
+/*Contacts*/
+
+.bigcard2 {
+  
+  background-color: #f6efe1;
+  border-radius: 10px;
+  border: 10px double #f6efe1;
+  background-clip: padding-box;
+  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.left-column {
+  display: grid;
+  
+  grid-gap: 20px;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #001e41;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  background-color: #001e41;
+  color: #f6efe1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #275083;
+}
+
+
+/*tipos de texto*/
+
+h1 { /*nome*/
+  font-family: 'Merriweather', serif;
+  font-size: 60px;
+  color: #f6efe1;
+  }
+   
+ 
+ h2 { /*subtexto*/
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  color: #e9cebf;
+  text-align: center;
+ }
+ 
+
+ h3 { /*subtitulo*/
+  font-size: 52px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #9876a3;
+  text-align: center;
+ }
+
+ h4 { /*letra dos cards*/
+  font-size: 27px;
+  font-family: 'Merriweather', serif;
+  color: #001e41;
+  text-align: left;
+ } 
+ 
+ h5 { /*normaltxt*/
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #001e41;
+ } 
+ 
+ h6 { /*normaltxt2*/
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #f6efe1;
+  
+ }
+
+ #RP {
+  text-decoration: underline;
+  font-size: 40px;
+  font-family: 'Merriweather', serif;
+  color: #001e41;
+}
+
+
+
+ /* 
+#001e41 - azul + escuro
+#092a51 - azul médio
+#143661 - azul médio 2
+#1e4372 - azul claro 2
+#275083 - azul claro 1
+#545c90 - roxo escuro 
+#78689a - roxo médio 
+#9876a3 - lilás rosado
+#c28da3 - rosa pale
+#daacaa - bege rosado
+#e9cebf - bege
+#f6efe1 - bege claro
+
+
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Merriweather', serif;
+*/
